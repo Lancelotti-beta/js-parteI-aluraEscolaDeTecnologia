@@ -17,3 +17,7 @@ entedendo o basíco de Programação, ininciando com JavaScript
  - Inserção de itens em uma 'Array' e palavras reservadas do JS
  - ultizando Laço 'ForEach'
 
+ ### Parte IV
+ - Operadores lógicos e suas funcionalidades
+ - encadeamento de 'if'
+ 

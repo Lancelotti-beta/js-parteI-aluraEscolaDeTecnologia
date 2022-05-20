@@ -27,8 +27,10 @@ listaDeViagem.unshift(`Presidente Bernades`);
 
 console.log(listaDeViagem.indexOf(`Curitiba`));
 
-listaDeViagem.forEach(function(lista, index){
-    let valor = lista.slice(index, 1);
+
+listaDeViagem.forEach(function(index){
+    //O valor '.splice' Remove itens, basta colocar o indice e o numero de itens a serem removidos nos ()   
+    let valor = listaDeViagem.splice(index, 1);
     console.log(`\n ${valor}`);
 });
 
