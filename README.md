@@ -12,4 +12,8 @@ entedendo o basíco de Programação, ininciando com JavaScript
  - conctenação e atribuição de variaveis
  - a importancia de dscrever as variavéis para os projetos
 
+ ### Parte III
+ - Criação de 'Array'
+ - Inserção de itens em uma 'Array' e palavras reservadas do JS
+ - ultizando Laço 'ForEach'
 
