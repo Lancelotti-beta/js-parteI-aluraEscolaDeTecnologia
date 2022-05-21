@@ -20,4 +20,8 @@ entedendo o basíco de Programação, ininciando com JavaScript
  ### Parte IV
  - Operadores lógicos e suas funcionalidades
  - encadeamento de 'if'
- 
+
+ ### Parte V
+ - Usando laço 'for' e fazendo verificações
+ - utilizando 'break' em laços
+ - Entendo o fluxo de execusão e do código, utilizando o Debbuger do VS Code 
