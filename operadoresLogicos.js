@@ -2,7 +2,7 @@
 
 let idadeDoComprador = 18;
 let compradorEstaAcompanhado = false;
-let temPassagem = false;
+let temPassagem = true;
  
 const listaDeViagem = new Array(
     `Curitiba`,
