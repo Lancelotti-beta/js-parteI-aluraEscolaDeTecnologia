@@ -1,0 +1,20 @@
+{
+  "name": "javascriptpoo",
+  "version": "1.0.0",
+  "description": "Criando o ByteBank, Alura - Aula ",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lancelotti-beta/js-parteI-aluraEscolaDeTecnologia.git"
+  },
+  "author": "Bruno José M.S.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lancelotti-beta/js-parteI-aluraEscolaDeTecnologia/issues"
+  },
+  "homepage": "https://github.com/Lancelotti-beta/js-parteI-aluraEscolaDeTecnologia#readme"
+}

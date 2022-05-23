@@ -1,0 +1,4 @@
+//Para o 'package.json'
+"main": "index.js",
+"type": "module",
+
