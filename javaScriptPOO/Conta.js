@@ -1,23 +1,29 @@
 //Byte Bank - Js P.O.O.
 
-export class Conta {
+export default class Conta {
     tipo;
     agencia;
+    cliente;
+
     #saldo = 0;
+
 
     deposito(valor){
         if(valor <= 0) return;
-        this.deposito += valor;
+        this.#saldo += valor;
     }
     
     saque(valor){
-        if(this.#saldo >= valor){
-           this.#saldo -= valor;
-        }
+        if(this.#saldo >= valor) this.#saldo -= valor;
+    }
+
+    transferencia(valor, conta){
+        const valorTransferido = this.saque(valor);
+        conta.deposito(valorTransferido);
     }
 
     saldo(){
-       return this.deposito += this.#saldo;
+       return this.#saldo;
     }
 }
 
