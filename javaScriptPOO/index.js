@@ -1,34 +1,20 @@
 import Conta from "./Conta.js";
 import Cliente from "./Cliente.js";
+import ContaCorrente from "./ContaCorrente.js";
 
-const cliente = new Cliente();
+const bruno = new Conta();
+bruno.agencia = '001';
 
-cliente.nome = 'José';
-cliente.endereco = 'Bella Vista';
-cliente.rg = '12.345.678-x'
-cliente.cpf = 8833999970;
+bruno.tipo = new ContaCorrente();
+bruno.tipo.deposito(500);
+bruno.tipo.saque(150);
 
-const client2 = new Cliente();
+bruno.cliente = new Cliente();
+bruno.cliente.nome = 'Bruno José';
+bruno.cliente.cpf = 33388846807;
+bruno.cliente.rg = '12.184.999-x';
+bruno.cliente.endereco = 'Rua Rebouças';
 
-client2.nome = 'Yan de Freitas';
-client2.endereco = 'Bella Vista'
-client2.cpf = 1234567899;
-client2.rg = '12.467.888-x'
 
-// ===================================
-const lalachinha = new Conta();
 
-lalachinha.agencia = '001';
-lalachinha.tipo = 'Conta Corrente';
-lalachinha.cliente = cliente;
-
-const jujubinha = new Conta();
-
-jujubinha.agencia = '075';
-jujubinha.tipo = 'Conta Poupança';
-jujubinha.cliente = client2;
-
-lalachinha.deposito(800);
-lalachinha.transferencia(100, jujubinha);
-
-console.log(jujubinha.saldo());
+console.log(bruno, bruno.tipo.saldo, bruno.cliente);
