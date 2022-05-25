@@ -2,19 +2,14 @@ import Conta from "./Conta.js";
 import Cliente from "./Cliente.js";
 import ContaCorrente from "./ContaCorrente.js";
 
-const bruno = new Conta();
-bruno.agencia = '001';
 
-bruno.tipo = new ContaCorrente();
-bruno.tipo.deposito(500);
-bruno.tipo.saque(150);
+const cliente = new Cliente('Bruno José', 33322248406, 'Rua Rebouças');
 
-bruno.cliente = new Cliente();
-bruno.cliente.nome = 'Bruno José';
-bruno.cliente.cpf = 33388846807;
-bruno.cliente.rg = '12.184.999-x';
-bruno.cliente.endereco = 'Rua Rebouças';
+const contaCorrente = new ContaCorrente();
 
+const bruno = new Conta('001', contaCorrente, cliente);
 
+bruno.tipo.deposito(5000);
+bruno.tipo.saque(1500);
 
-console.log(bruno, bruno.tipo.saldo, bruno.cliente);
+console.log(ContaCorrente.numeroDeCC);

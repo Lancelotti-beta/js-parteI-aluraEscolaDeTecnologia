@@ -3,8 +3,15 @@ import ContaCorrente from "./ContaCorrente.js";
 
 export default class Conta {
     agencia;
-
     tipo;
+
+    #cliente;
+
+    constructor(agencia, tipo, cliente) {
+        this.agencia = agencia;
+        this.tipo = tipo;
+        this.#cliente = cliente;
+    }
 
     set tipo(tipoDeConta){
         if(tipoDeConta instanceof ContaCorrente){
@@ -17,7 +24,6 @@ export default class Conta {
     }
 
 
-    #cliente;
 
     set cliente(novoCliente){
         if(novoCliente instanceof Cliente){

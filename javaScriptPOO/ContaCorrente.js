@@ -1,5 +1,11 @@
 export default class ContaCorrente {
+    static numeroDeCC = 0;
+
     #saldo = 0;
+
+    constructor (){
+        ContaCorrente.numeroDeCC++;
+    }
 
     deposito(valor){
         if(valor <= 0) return;
