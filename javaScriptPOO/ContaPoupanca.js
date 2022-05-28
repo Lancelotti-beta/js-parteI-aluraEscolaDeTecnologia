@@ -1,36 +1,18 @@
+import Conta from "./Conta.js";
+
 export default class ContaPoupanca {
     static numeroDeCp = 0;
 
-    #saldo = 0;
-
-    constructor (saldo){
-        if(saldo >= 500){
-            this.#saldo =+ saldo;
+    constructor (saldoInicial, agencia){
+        if(saldoInicial >= 500){
+            this.#saldo =+ saldoInicial;
         } else {
             return `Operação Invalida!`
         }
+        
+        this.#agencia = agencia;
 
         ContaPoupanca.numeroDeCp++;
     }
 
-    deposito(valor){
-        if(valor <= 0) return;
-        this.#saldo += valor;
-    }
-    
-    saque(valor){
-        if(this.#saldo >= valor) {
-            this.#saldo -= valor;
-            return valor;
-        }
-    }
-
-    transferencia(valor, conta){
-        const valorTransferido = this.saque(valor);
-        conta.deposito(valorTransferido);
-    }
-
-    get saldo(){
-        return `Saldo Disponível: ${this.#saldo}`;
-    }
 }

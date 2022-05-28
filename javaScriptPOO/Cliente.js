@@ -1,8 +1,5 @@
 export default class Cliente {
-    nome;
-    #cpf;
-    endereco;
-
+    
     constructor(nome, cpf, endereco) {
         this.nome = nome;
         this.#cpf = cpf;

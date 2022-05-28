@@ -19,4 +19,4 @@ const contaPoupanca = new ContaPoupanca(1000);
 const jose = new Conta('075', contaPoupanca, cliente2);
 
 
-console.log(jose.tipo.saldo);
+console.log(jose);
