@@ -30,3 +30,10 @@ entedendo o basíco de Programação, ininciando com JavaScript
  - utilizando 'static', 'constructor' e fazendo um contador de Contas
  ---------------------
  - Encapsulamento, abstração no código, 
+
+ ### Parte III
+ - Boas práticas na declaração dos atributos
+ - entendendo os problemas de códigos extremamante compartilhados
+
+
+ 
