@@ -1,12 +1,10 @@
-import Conta from "./Conta.js";
+import {Conta} from "./Conta.js";
 
-export default class ContaCorrente {
+export class ContaCorrente extends Conta {
     static numeroDeCC = 0;
 
-    constructor (agencia){
-        this.#agencia = agencia;
-        this.#saldo = 0;
-
+    constructor (agencia, cliente){
+        super(0, agencia, cliente);
         ContaCorrente.numeroDeCC++;
     }
 }

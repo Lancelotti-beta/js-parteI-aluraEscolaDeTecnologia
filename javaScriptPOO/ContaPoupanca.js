@@ -1,17 +1,10 @@
-import Conta from "./Conta.js";
+import {Conta} from "./Conta.js";
 
-export default class ContaPoupanca {
+export class ContaPoupanca extends Conta {
     static numeroDeCp = 0;
 
-    constructor (saldoInicial, agencia){
-        if(saldoInicial >= 500){
-            this.#saldo =+ saldoInicial;
-        } else {
-            return `Operação Invalida!`
-        }
-        
-        this.#agencia = agencia;
-
+    constructor (saldoInicial, agencia, cliente){
+        super(saldoInicial, agencia, cliente);
         ContaPoupanca.numeroDeCp++;
     }
 

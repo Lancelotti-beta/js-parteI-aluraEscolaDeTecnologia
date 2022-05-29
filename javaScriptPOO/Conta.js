@@ -1,50 +1,40 @@
-import Cliente from "./Cliente.js";
-import ContaCorrente from "./ContaCorrente.js";
+import {Cliente} from "./Cliente.js";
 
-export default class Conta {
+export class Conta {
 
-    constructor(cliente, tipo) {
-        this.#cliente = cliente;
-        this.tipo = tipo;
-        this.#saldo = 0;
+    constructor(saldoInicial, agencia, cliente) {
+        this._saldo = saldoInicial;
+        this._agencia = agencia;
+        this._cliente = cliente;
     }
-
-    set tipo(tipoDeConta){
-        if(tipoDeConta instanceof ContaCorrente){
-            this.tipo = tipoDeConta;
-        }
-    }
-
-    get tipo() {
-        return this.tipo;
-    }
-
-
 
     set cliente(novoCliente){
         if(novoCliente instanceof Cliente){
-            this.#cliente = novoCliente;
+            this._cliente = novoCliente;
         }
     }
 
     get cliente(){
-        return this.#cliente;
+        return this._cliente;
     }
 
     get saldo(){
-        return `Saldo Disponível: ${this.#saldo}`;
+        return `Saldo Disponível: ${this._saldo}`;
     }
 
     deposito(valor){
         if(valor <= 0) return;
-        this.#saldo += valor;
+        this._saldo += valor;
     }
     
     saque(valor){
-        let taxa = 1.1 * taxa;
-        if(this.#saldo >= valor) {
-            this.#saldo -= valor;
-            return valor;
+
+        let taxa = 1;
+        const valorDeSaque = taxa * valor;
+
+        if(this._saldo >= valorDeSaque) {
+            this._saldo -= valorDeSaque;
+            return valorDeSaque;
         }
     }
 
