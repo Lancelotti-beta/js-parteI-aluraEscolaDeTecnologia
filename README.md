@@ -34,6 +34,7 @@ entedendo o basíco de Programação, ininciando com JavaScript
  ### Parte III
  - Boas práticas na declaração dos atributos
  - entendendo os problemas de códigos extremamante compartilhados
+ - usando herança de 'class', compartilhamento de código e metodos privados e protegidos
 
 
  
