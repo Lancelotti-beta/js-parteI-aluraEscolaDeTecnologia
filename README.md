@@ -38,5 +38,8 @@ entedendo o basíco de Programação, ininciando com JavaScript
  ----------------------
  - Entendendo o conceito de 'Class Abstrata' - Só funcionam para ser herdadas, não podem ser costruidas diretamente.
  - Modificando erro - Lançamento de erros & Erros em tempo de execução. Usando 'throw'.
+ - Usando 'Ducky Type' para validar um simples sistema de login.
+
+ ### . . . . 
 
  
