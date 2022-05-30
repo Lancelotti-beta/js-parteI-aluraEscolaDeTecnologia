@@ -12,6 +12,10 @@ export class Cliente {
     }
 
 
+    userAuthenticated(senha) {
+        return senha == this._senha;
+    }
+
 }
 
 
