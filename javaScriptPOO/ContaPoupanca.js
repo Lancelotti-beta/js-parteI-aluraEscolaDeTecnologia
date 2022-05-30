@@ -8,4 +8,8 @@ export class ContaPoupanca extends Conta {
         ContaPoupanca.numeroDeCp++;
     }
 
+    saque(valor) {
+        const taxa =  1.02;
+        return this._saque(valor, taxa)
+    }
 }
