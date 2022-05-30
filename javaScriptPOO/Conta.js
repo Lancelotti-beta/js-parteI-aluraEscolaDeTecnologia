@@ -30,6 +30,10 @@ export class Conta {
     saque(valor){
 
         let taxa = 1;
+        return this._saque(valor, taxa);
+    }
+
+    _saque(valor, taxa){
         const valorDeSaque = taxa * valor;
 
         if(this._saldo >= valorDeSaque) {
