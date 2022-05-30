@@ -36,6 +36,7 @@ entedendo o basíco de Programação, ininciando com JavaScript
  - entendendo os problemas de códigos extremamante compartilhados.
  - usando herança de 'class', compartilhamento de código e métodos privados e protegidos - Sobreescrita de métodos.
  ----------------------
- - Entendendo o conceito de 'Class Abstrata' - Só funcionam para ser herdadas, não podem ser costruidas diretamente. 
+ - Entendendo o conceito de 'Class Abstrata' - Só funcionam para ser herdadas, não podem ser costruidas diretamente.
+ - Modificando erro - Lançamento de erros & Erros em tempo de execução. Usando 'throw'.
 
  
