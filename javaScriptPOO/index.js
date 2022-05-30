@@ -1,22 +1,26 @@
-import {Cliente} from "./Cliente.js";
-import {ContaCorrente} from "./ContaCorrente.js";
-import {ContaPoupanca} from "./ContaPoupanca.js";
-import { ContaSalario } from "./ContaSalario.js";
+import { Cliente } from "./Cliente.js";
+import { Gerente } from "./funcionarios/Gerente.js";
+import { Diretor } from "./funcionarios/Diretor.js";
+import { SistemaDeLogin } from "./SistemaDeLogin.js";
 
+const diretor = new Diretor('Albertinho', 12345678900, 10000);
+diretor.cadastrarSenha('123456');
 
-/* ==================== Conta Corrente ==================== */
-const cliente = new Cliente('Bruno José', 33322248406, 'Rua Rebouças');
-const bruno = new ContaCorrente("075", cliente);
+console.log(
+    `Diretor: ${SistemaDeLogin.autenticacao(diretor, '123456')}`
+);
 
-/* ==================== Conta Poupança ==================== */
-const cliente2 = new Cliente('Bruno José', 33322248406, 'Rua Rebouças');
-const jose = new ContaPoupanca(500, "001", cliente2);
+const gerente = new Gerente('Julião', 19876543210, 5000);
+gerente.cadastrarSenha('123');
 
-const contaSalario = new ContaSalario(cliente2);
+console.log(
+    `Gerente: ${SistemaDeLogin.autenticacao(gerente, '123')}`
+);
 
-//console.log(bruno);
+const cliente = new Cliente('Thomas', 12345006789, 'Rua Andrade', '123a');
 
-contaSalario.deposito(125);
-contaSalario.saque(50);
-
-console.log(contaSalario);
+/*
+console.log(
+    `Cliente: ${SistemaDeLogin.autenticacao(cliente, '123a')}`
+);
+*/
