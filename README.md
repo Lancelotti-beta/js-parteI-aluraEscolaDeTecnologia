@@ -1,8 +1,10 @@
 # Js - Alura Escola De Tecnologia
 
-## Aula de Programação com NodeJs 
+## Arquivos de aula - Programação
 
-entedendo o basíco de Programação, ininciando com JavaScript
+entedendo o basíco de Programação, ininciando com JavaScript no
+
+ >> nodeJs 
 
  ### Parte I - Usando o 'Básico'
  - printar valores no console, aritimética e diferencia 'String' e 'Number'.
@@ -40,6 +42,6 @@ entedendo o basíco de Programação, ininciando com JavaScript
  - Modificando erro - Lançamento de erros & Erros em tempo de execução. Usando 'throw'.
  - Usando 'Ducky Type' para validar um simples sistema de login.
 
- ### . . . . 
+## regex - Expressões Regulares
 
  
