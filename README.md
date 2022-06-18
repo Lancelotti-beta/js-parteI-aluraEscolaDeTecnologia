@@ -4,7 +4,7 @@
 
 entedendo o basíco de Programação, ininciando com JavaScript no
 
- >> nodeJs 
+ >> para iniciar o projeto tenha o nodeJs e use ´npm start´ para executar
 
  ### Parte I - Usando o 'Básico'
  - printar valores no console, aritimética e diferencia 'String' e 'Number'.
